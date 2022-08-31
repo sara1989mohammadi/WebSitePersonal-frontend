@@ -19,6 +19,7 @@
     url("fonts/fonticon.woff") format("woff"),
     url("fonts/fonticon.ttf") format("truetype");
 }
+
 /*-------------------------------------------------*/
 :root {
   --primary-background: #313536;
@@ -29,14 +30,17 @@
   --card-title: #00e472;
   --card-title-altr: #00e472;
 }
+
 html {
   font-size: 62.5%;
 }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 h1,
 h2,
 h3,
@@ -45,6 +49,7 @@ h5,
 h6 {
   margin: 0;
 }
+
 a {
   color: inherit;
   text-decoration: none;
@@ -53,6 +58,7 @@ a {
 li {
   list-style: none;
 }
+
 body {
   font-family: irs;
   font-weight: 400;
@@ -61,6 +67,7 @@ body {
   color: var(--text-primary);
   direction: rtl;
 }
+
 p {
   font-weight: 400;
   font-size: 20px;
@@ -69,6 +76,7 @@ p {
   color: var(--text-secondary);
   text-align: justify;
 }
+
 h5 {
   font-weight: 700;
   font-size: 20px;
@@ -77,6 +85,7 @@ h5 {
   color: var(--card-title);
   padding-bottom: 5px;
 }
+
 h6 {
   font-weight: 400;
   font-size: 22px;
@@ -84,29 +93,34 @@ h6 {
   align-items: right;
   text-align: right;
 }
+
 h1 {
   font-weight: 400;
   font-size: 45px;
   line-height: 56px;
   color: var(--text-primary);
 }
+
 /*********************************** Icon ************************************/
 .icon {
   width: 50px;
   height: 50px;
   fill: var(--text-primary);
 }
+
 .icon--bio {
   width: 20px;
   height: 20px;
   fill: var(--card-title-altr);
 }
+
 /*********************************** Button ************************************/
 .btn {
   width: 191px;
   height: 50px;
   cursor: pointer;
 }
+
 .btn--contact {
   border-radius: 10px;
   font-weight: 500;
@@ -118,6 +132,7 @@ h1 {
   outline-offset: 0px;
   transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1) !important;
 }
+
 .btn--contact:hover {
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 228, 114, 0.2);
   outline-color: rgba(84, 89, 90, 0);
@@ -130,19 +145,23 @@ h1 {
   font-weight: 500;
   font-size: 19px;
 }
+
 .btn--info:hover {
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 228, 114, 0.2);
   outline-color: rgba(84, 89, 90, 0);
   outline-offset: 15px;
 }
+
 .btn--fill {
   background: var(--card-title);
   border: none;
 }
+
 .btn--border {
   background: var(--secondary-background);
   border: var(--card-title) 1px solid;
 }
+
 /*********************************** Container ************************************/
 .container {
   width: 100%;
@@ -150,6 +169,7 @@ h1 {
   padding-inline: 3px;
   margin-inline: auto;
 }
+
 /*********************************** Header ************************************/
 .header {
   width: 100%;
@@ -160,24 +180,29 @@ h1 {
   justify-content: space-around;
   align-items: center;
 }
+
 .header__title {
   font-size: 24px;
   font-weight: 400;
 }
+
 .navbar {
   display: flex;
   font-size: 16px;
   align-items: center;
   gap: 120px;
 }
+
 .menu {
   display: flex;
   gap: 50px;
 }
+
 .menu__item a:hover {
   color: var(--card-title);
   font-weight: bold;
 }
+
 .menu__item a::after {
   content: "";
   display: block;
@@ -192,6 +217,7 @@ h1 {
 .menu__item a:hover::after {
   width: 100%;
 }
+
 .toggle-btn {
   width: 40px;
   height: 40px;
@@ -204,16 +230,19 @@ h1 {
   border: 0;
   flex-shrink: 0;
 }
+
 .toggle-btn .bar {
   background-color: #000000;
   height: 5px;
   width: 100%;
   border-radius: 5px;
 }
+
 @media screen and (max-width: 1024px) {
   .toggle-btn {
     display: flex;
   }
+
   .navbar {
     position: absolute;
     inset: 0;
@@ -228,25 +257,30 @@ h1 {
     overflow: hidden;
     transition: all 0.5s ease-in-out;
   }
+
   .navbar.active {
     max-width: 100vw;
   }
+
   .menu {
     flex-direction: column;
     text-align: left;
     row-gap: 12px;
   }
 }
+
 /*********************************** Main ************************************/
 .main {
   width: 100%;
 }
+
 /*********************************** Main-info ************************************/
 .main__info {
   padding-block: 30px;
   background-color: var(--secondary-background);
   max-height: auto;
 }
+
 .main__info .container {
   display: flex;
   justify-content: space-around;
@@ -261,10 +295,12 @@ h1 {
   gap: 32px;
   font-weight: 400;
 }
+
 .main__info--description__title h2 {
   font-size: 52px;
   padding-bottom: 10px;
 }
+
 .main__info--description__title p {
   display: flex;
   align-items: center;
@@ -272,6 +308,7 @@ h1 {
   font-size: 18px;
   line-height: 33px;
 }
+
 .main__info--description__btns {
   display: flex;
   gap: 20px;
@@ -282,6 +319,7 @@ h1 {
   border: 10px solid #54595a;
   border-radius: 3px;
 }
+
 /*********************************** Main-bio ************************************/
 .main__bio {
   padding-block: 30px;
@@ -294,11 +332,13 @@ h1 {
   align-items: center;
   gap: 80px;
 }
+
 .main__bio--img {
   width: 480px;
   height: 576px;
   border-radius: 100px / 120px 10px;
 }
+
 .main__bio--description {
   display: flex;
   flex-direction: column;
@@ -315,10 +355,12 @@ h1 {
   line-height: 33px;
   text-align: justify;
 }
+
 .main__bio--description__title button {
   align-items: center;
   float: left;
 }
+
 /*********************************** Main-cv ************************************/
 .main__cv {
   padding-block: 30px;
@@ -341,6 +383,7 @@ h1 {
   gap: 30px;
   font-weight: 400;
 }
+
 .main__cv--description__title {
   gap: 22px;
 }
@@ -351,6 +394,7 @@ h1 {
   line-height: 31px;
   color: var(--card-title);
 }
+
 .main__cv--description__intro h4 {
   font-weight: 400;
   font-size: 32px;
@@ -362,17 +406,20 @@ h1 {
   width: 513px;
   height: 502px;
 }
+
 /*********************************** Main-book ************************************/
 .main__book {
   padding-block: 30px;
   max-height: auto;
 }
+
 .main__book .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 130px;
 }
+
 .main__book--description {
   display: flex;
   flex-direction: column;
@@ -382,20 +429,24 @@ h1 {
   font-weight: 400;
   text-align: center;
 }
+
 .main__book--description__title h1 {
   align-items: center;
   text-align: center;
 }
+
 .main__book--description__title h5 {
   font-weight: 400;
   font-size: 20px;
   line-height: 31px;
   color: var(--card-title);
 }
+
 .main__book--content {
   display: flex;
   gap: 69px;
 }
+
 .main__book--content__intro {
   display: flex;
   flex-direction: column;
@@ -407,20 +458,23 @@ h1 {
   text-align: center;
   padding-bottom: 20px;
 }
+
 .main__book--content__intro h5 {
   font-weight: 400;
   font-size: 26px;
   align-items: center;
   text-align: center;
 }
-.main__book--content__intro p {
-}
+
+.main__book--content__intro p {}
+
 .main__book--img {
   margin-top: 22px;
   border-radius: 15px;
   width: 100px;
   height: 100px;
 }
+
 /*********************************** swiper ************************************/
 .swiper {
   width: 100%;
@@ -447,16 +501,19 @@ h1 {
   border-radius: 20px;
   background-color: var(--primary-background);
 }
+
 /*********************************** Main-slide-article ************************************/
 .main__slide {
   padding-block: 30px;
   max-height: auto;
   background-color: var(--secondary-background);
 }
+
 .main__slide .container {
   align-items: center;
   gap: 130px;
 }
+
 .main__slide--description {
   display: flex;
   flex-direction: column;
@@ -466,10 +523,12 @@ h1 {
   font-weight: 400;
   text-align: center;
 }
+
 .main__slide--description__title h1 {
   align-items: right;
   text-align: right;
 }
+
 .main__slide--description__title h5 {
   font-weight: 400;
   font-size: 26px;
@@ -483,17 +542,20 @@ h1 {
   gap: 69px;
   padding-block: 50px;
 }
+
 .swiper-slide__article--title {
   padding-inline: auto;
   display: flex;
   gap: 24px;
 }
+
 .swiper-slide__article--img {
   border-radius: 15px;
   width: 100px;
   height: 100px;
   float: right;
 }
+
 .swiper-slide__article--content__intro {
   display: flex;
   flex-direction: column;
@@ -503,12 +565,14 @@ h1 {
   text-align: justify;
   padding-bottom: 20px;
 }
+
 .swiper-slide__article--title {
   padding-top: 59px;
   padding-inline: 29px;
   display: flex;
   gap: 14px;
 }
+
 .swiper-slide__article--content__intro h5 {
   font-size: 14px;
   line-height: 18px;
@@ -518,6 +582,7 @@ h1 {
   color: var(--card-title);
   padding-bottom: 6px;
 }
+
 .swiper-slide__article--content__intro h6 {
   align-items: right;
   text-align: right;
@@ -527,6 +592,7 @@ h1 {
   align-items: center;
   float: left;
 }
+
 /*********************************** Main-counter ************************************/
 .main__counter {
   padding-block: 30px;
@@ -537,12 +603,14 @@ h1 {
   text-align: center;
   padding-top: 96px;
 }
+
 .main__counter .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 130px;
 }
+
 .circle {
   display: flex;
   align-items: center;
@@ -552,6 +620,7 @@ h1 {
   border-radius: 62px;
   background: rgba(0, 228, 114, 0.2);
 }
+
 .main__counter--description {
   display: flex;
   flex-direction: column;
@@ -559,18 +628,21 @@ h1 {
   text-align: center;
   gap: 13px;
 }
+
 /*********************************** Main-article ************************************/
 .main__article {
   padding-block: 30px;
   max-height: auto;
   background-color: var(--secondary-background);
 }
+
 .main__article .container {
   display: flex;
   justify-content: space-around;
   align-items: right;
   gap: 130px;
 }
+
 .main__article--description {
   display: flex;
   flex-direction: column;
@@ -580,10 +652,12 @@ h1 {
   font-weight: 400;
   text-align: right;
 }
+
 .main__article--description__title h1 {
   align-items: right;
   text-align: right;
 }
+
 .main__article--description__title h5 {
   font-weight: 400;
   font-size: 26px;
@@ -591,11 +665,13 @@ h1 {
   text-align: right;
   color: var(--card-title);
 }
+
 .main__article--content {
   display: flex;
   gap: 69px;
   padding-bottom: 149px;
 }
+
 .main__article--content__intro {
   display: flex;
   flex-direction: column;
@@ -607,12 +683,14 @@ h1 {
   align-items: right;
   text-align: right;
 }
+
 .main__article--title {
   padding-top: 59px;
   padding-inline: 29px;
   display: flex;
   gap: 14px;
 }
+
 .main__article--content__intro h5 {
   font-size: 14px;
   line-height: 18px;
@@ -635,12 +713,14 @@ h1 {
   padding-block: 30px;
   max-height: auto;
 }
+
 .main__contact .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 130px;
 }
+
 .main__contact--description {
   display: flex;
   flex-direction: column;
@@ -651,16 +731,19 @@ h1 {
 
   text-align: center;
 }
+
 .main__contact--description__title h1 {
   align-items: center;
   text-align: center;
 }
+
 .main__contact--description__title h5 {
   font-weight: 400;
   font-size: 20px;
   line-height: 31px;
   color: var(--card-title);
 }
+
 .form--field {
   display: flex;
   flex-direction: column;
@@ -668,11 +751,13 @@ h1 {
   align-items: center;
   text-align: center;
 }
+
 .form--field__item {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
+
 .form--field__item label {
   font-weight: 400;
   font-size: 25px;
@@ -680,6 +765,7 @@ h1 {
   color: var(--text-secondary);
   text-align: right;
 }
+
 .form--field__item input {
   width: 529px;
   height: 56px;
@@ -688,12 +774,54 @@ h1 {
   border-radius: 12px;
   padding-bottom: 16px;
 }
+
 .form--field__item textarea {
   border: 1px solid var(--card-title);
   background: none;
   border-radius: 12px;
   padding-bottom: 16px;
 }
+
 .form--field button {
   margin-top: 44px;
+}
+
+/*********************************** main__bio--desc ************************************/
+.main__bio--desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 80px;
+}
+
+.main__bio--desc__header {
+  background-color: var(--secondary-background);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  justify-content: space-around;
+  padding-block: 20px;
+}
+
+.main__desc__content .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 80px;
+}
+
+.main__desc__content--img {
+  width: 574.66px;
+  height: 338px;
+}
+
+.main__desc__content p {
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 33px;
+  text-align: justify;
 }
